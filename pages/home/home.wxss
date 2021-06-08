@@ -1,0 +1,23 @@
+/* pages/home/home.wxss */
+.home-wrap{
+  
+}
+.home-wrap .recommend-wrap{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 8rpx solid #eee;
+}
+.home-wrap .recommend-wrap .recommend-item{
+  flex:1;
+  text-align: center;
+}
+.home-wrap .recommend-wrap .recommend-item image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.home-wrap .recommend-wrap .recommend-item text{
+  font-size: 28rpx;
+  color: #666;
+}

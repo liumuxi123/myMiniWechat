@@ -1,0 +1,29 @@
+<!-- pages/home/home.wxml -->
+<view class="home-wrap">
+  <view class="swiper-part">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
+      <block wx:for="{{banners}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item">
+            <image class="" src="{{item}}" mode="heightFix"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="recommend-wrap">
+    <block wx:for="{{recommend}}" wx:key="*this">
+      <view class="recommend-item">
+        <image class="" src="{{item.image}}"></image>
+        <view>
+          <text class="">{{item.title}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="week-hot-wrap">
+    <view class="week-hot-title">
+      <text>本周流行</text>
+    </view>
+  </view>
+</view>
