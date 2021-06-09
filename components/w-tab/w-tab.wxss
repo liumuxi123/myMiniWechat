@@ -1,0 +1,24 @@
+/* components/tab-control/tab-control.wxss */
+.wx-tab-wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.wx-tab-wrap .tab-item{
+  flex: 1;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.wx-tab-wrap .tab-item .tab-item-title{
+  color: #333;
+  font-weight: 500;
+  font-size: 32rpx;
+}
+.wx-tab-wrap .tab-item.active .tab-item-title{
+  display: inline-block;
+  color: #0094f5;
+  font-weight: 500;
+  font-size: 32rpx;
+  border-bottom: 4rpx solid #0094f5;
+}

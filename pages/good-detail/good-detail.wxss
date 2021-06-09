@@ -1,0 +1,27 @@
+/* pages/good-detail/good-detail.wxss */
+.good-detail-wrap .swiper-part{
+  height: 728rpx;
+}
+.good-detail-wrap .swiper-part swiper,.swiper-part swiper .swiper-item{
+  height: 728rpx;
+}
+.good-detail-wrap .swiper-part swiper .swiper-item image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.good-detail-wrap .good-info-wrap{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32rpx;
+  color: #666;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+.good-detail-wrap .good-info-wrap .name{
+  margin-bottom: 32rpx;
+}
+.good-detail-wrap .good-info-wrap .mini-info{
+  display: flex;
+  justify-content: space-between;
+}

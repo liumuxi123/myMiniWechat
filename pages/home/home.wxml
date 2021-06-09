@@ -2,7 +2,7 @@
 <view class="home-wrap">
   <view class="swiper-part">
     <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
-      <block wx:for="{{banners}}" wx:key="*this">
+      <block wx:for="{{banners}}" wx:key="index">
         <swiper-item>
           <view class="swiper-item">
             <image class="" src="{{item}}" mode="heightFix"></image>
@@ -12,7 +12,7 @@
     </swiper>
   </view>
   <view class="recommend-wrap">
-    <block wx:for="{{recommend}}" wx:key="*this">
+    <block wx:for="{{recommend}}" wx:key="index">
       <view class="recommend-item">
         <image class="" src="{{item.image}}"></image>
         <view>
@@ -24,6 +24,39 @@
   <view class="week-hot-wrap">
     <view class="week-hot-title">
       <text>本周流行</text>
+    </view>
+    <view class="week-hot-content">
+      <block wx:for="{{weekHot}}" wx:key="index">
+        <view class="hot-item">
+        <image class="" src="{{item.image}}"></image>
+        <view>
+          <text class="">{{item.title}}</text>
+        </view>
+      </view>
+      </block>
+    </view>
+  </view>
+  <view class="tab-wrap">
+    <w-tab tabList="{{tabList}}" bind:itemClick="tabClick"/>
+    <view class="tab-content-wrap">
+      <block wx:for="{{goodList}}" wx:key="index">
+        <view class="good-item" bind:tap="goodClick" data-id="{{item.id}}">
+          <image class="" src="{{item.image}}" mode="widthFix">
+          </image>
+          <view class="good-des">
+            <view class="abstract">
+              <text>
+                {{item.abstract}}
+              </text>
+            </view>
+            <view class="price">
+              <text>
+                ￥{{item.price}}
+              </text>
+            </view>
+          </view>
+        </view>
+      </block>
     </view>
   </view>
 </view>

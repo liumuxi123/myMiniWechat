@@ -1,0 +1,33 @@
+<!--pages/good-detail/good-detail.wxml-->
+<view class="good-detail-wrap">
+  <view class="swiper-part">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
+      <block wx:for="{{images}}" wx:key="index">
+        <swiper-item>
+          <view class="swiper-item">
+            <image class="" src="{{item}}" mode="scaleToFill"></image>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="good-info-wrap">
+    <view class="name">
+      <text>
+        {{detail.name}}
+      </text>
+    </view>
+    <view class="mini-info">
+      <view class="">
+        <text>
+          价格：<text style="color:#0094f5">￥{{data.price}}</text>
+        </text>
+      </view>
+      <view class="">
+        <text>
+          {{detail.saleAddress}}
+        </text>
+      </view>
+    </view>
+  </view>
+</view>
