@@ -1,1 +1,88 @@
 /* pages/user/user.wxss */
+.user-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+.user-wrap .user-info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32rpx;
+  color: #fff;
+  background-color: #0094f5;
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+}
+.user-wrap .user-info .user-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 40rpx;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-wrap .user-info .user-avatar image {
+  width: 100%;
+  height: 100%;
+}
+.user-wrap .user-info .arrow {
+  width: 60rpx;
+  height: 60rpx;
+}
+.user-wrap .user-info .arrow image {
+  width: 100%;
+  height: 100%;
+}
+.user-wrap .user-info .user-base-info {
+  flex: 1;
+  height: 140rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.user-wrap .user-info .user-base-info .user-name {
+  font-size: 36rpx;
+}
+.user-wrap .user-balance-part {
+  display: flex;
+  height: 200rpx;
+  padding: 40rpx 0rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.user-wrap .user-balance-part .balance-item {
+  flex: 1;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+  justify-content: space-around;
+  align-items: center;
+  color: #666;
+  font-size: 28rpx;
+}
+.user-wrap .user-balance-part .balance-item:last-child {
+  border-right: none;
+}
+.user-wrap .user-balance-part .balance-item  .num{
+  color: #0094f5;
+  font-size: 36rpx;
+}
+.user-wrap .user-list-wrap{
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 32rpx;  
+  margin: 32rpx 0rpx;
+}
+.user-wrap .user-list-wrap .list-item{
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #666;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+.user-wrap .user-list-wrap .list-item:last-child{
+  border-bottom: none;
+}

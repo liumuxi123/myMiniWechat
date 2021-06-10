@@ -7,17 +7,22 @@
     "pages/user/user"
   ],
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath":"./asset/images/home.png",
-      "selectedIconPath":"./asset/images/home_active.png"
-    }, {
-      "pagePath": "pages/user/user",
-      "text": "我的",
-      "iconPath":"./asset/images/man.png",
-      "selectedIconPath":"./asset/images/man_active.png"
-    }]
+    "color": "#666666",
+    "selectedColor": "#0094f5",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./asset/images/home.png",
+        "selectedIconPath": "./asset/images/home_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./asset/images/man.png",
+        "selectedIconPath": "./asset/images/man_active.png"
+      }
+    ]
   },
   "window": {
     "backgroundTextStyle": "light",

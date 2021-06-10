@@ -1,2 +1,64 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<!-- pages/user/user.wxml -->
+<view class="user-wrap">
+  <view class="user-info">
+    <view class="user-avatar">
+      <image wx:if="{{!hasUserInfo}}" class="" src="/asset/images/avatar.png"></image>
+      <image wx:else class="" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="user-base-info">
+      <view class="user-name">
+        <text wx:if="{{!hasUserInfo}}" class="">登录/注册</text>
+        <text wx:else class="">{{userInfo.nickName}}</text>
+      </view>
+      <view class="user-phone">
+        <text class="">暂无绑定手机号</text>
+      </view>
+    </view>
+    <view class="arrow" bind:tap="getUserInfo">
+      <image class="" src="/asset/images/arrow-right.png"></image>
+    </view>
+  </view>
+  <view class="user-balance-part">
+    <view class="balance-item">
+      <view class="top-num">
+        <text class="num">1000.00</text>
+        <text>元</text>
+      </view>
+      <view class="title">
+        <text>我的余额</text>
+      </view>
+    </view>
+    <view class="balance-item">
+      <view class="top-num">
+        <text class="num">0</text>
+        <text>个</text>
+      </view>
+      <view class="title">
+        <text>我的优惠</text>
+      </view>
+    </view>
+    <view class="balance-item">
+      <view class="top-num">
+        <text class="num">668</text>
+        <text>分</text>
+      </view>
+      <view class="title">
+        <text>我的积分</text>
+      </view>
+    </view>
+  </view>
+  <view class="user-list-wrap">
+    <view class="list-item">
+      <text class="list-text">我的消息</text>
+    </view>
+    <view class="list-item">
+      <text class="list-text">积分商城</text>
+    </view>
+    <view class="list-item">
+      <text class="list-text">会员卡</text>
+    </view>
+    <view class="list-item">
+      <text class="list-text">购物车</text>
+    </view>
+  </view>
+</view>
